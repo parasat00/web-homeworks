@@ -1,3 +1,2 @@
-#MyHW
-
-    This is my home works
+# MyHW
+This is my home works
