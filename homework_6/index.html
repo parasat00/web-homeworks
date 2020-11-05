@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles.css">
+ <script src="./script.js" defer></script>
+ <title>Home Work -6</title>
+</head>
+<body onload="drawRectangle(), drawCircle(), circles();">
+ <section class="flexer">
+  <form class="multiplier">
+   <label for="1stNumb">1st Number:</label>
+   <input type="text" name="1stNumb" id="1stNumb">
+   <br>
+   <label for="2ndNumb">2nd Number:</label>
+   <input type="text" name="2ndNumb" id="2ndNumb">
+   <br>
+   <input type="button" onclick="multiply()" value="Multiply" class="but">
+   <input type="button" onclick="divide()" value="Divide" class="but">
+   <p>The Result Is: <br>
+   <span id="multiplyResult"></span></p>
+  </form>
+
+  <form class="changer">
+   <label for="Celcius">Celcius:</label>
+   <input type="text" name="Celcius" id="Celcius">
+   <br>
+   <label for="Fahrenheit">Fahrenheit:</label>
+   <input type="text" name="Fahrenheit" id="Fahrenheit">
+   <br>
+   <input type="button" onclick="transfer()" value="transfer" class="but">
+   <div>Expected Output :</div>
+   <div id="ctof"></div>
+   <div id="ftoc"></div>
+  </form>
+  
+  <form class="volume-find">
+   <p>Input radius value and get the volume of a sphere</p>
+   <div>Radius:</div>
+   <input type="text" id="Radius" class="but">
+   <div>Volume:</div>
+   <input type="text" id="Volume" class="but">
+   <br>
+   <input type="button" onclick="findVolume()" value="Calculate" class="but">
+  </form>
+
+  <form class= "reverse">
+   <label for="Example">Example x:</label>
+   <input type="text" name="Example" id="Example">
+   <br>
+   <input type="button" onclick="reverse()" value="Reverse" class="but">
+   <div>Expected Output: <span id="exOut"></span></div>
+  </form>
+  </section>
+
+  <section class="flexer">
+   <canvas id="rectCanvas" width="250" height="250"></canvas>
+   <canvas id="circleCanvas" width="250" height="250"></canvas>
+  </section>
+
+  <section class="flexer">
+   <canvas id="canvasCircles" width="600" height="600"></canvas>
+  </section>
+</body>
+</html>

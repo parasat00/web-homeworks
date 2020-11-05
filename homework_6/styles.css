@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid lightblue;
+  width: 320px;
+}
+form label {
+  float: left;
+}
+form input {
+  float: right;
+}
+form .but {
+  float: none;
+}
+.flexer {
+  display: flex;
+  justify-content: center;
+}
