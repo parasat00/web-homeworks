@@ -56,8 +56,8 @@ function circles() {
  var context = canvas.getContext("2d");
  for(let i = 0; i < 6; i++) {
    context.beginPath();
-   context.fillStyle = "rgb(" + Math.floor(255-42.5*i) + "," + Math.floor(255-42.5*i) + "," + Math.floor(255-42.5*i) + ")";
-   context.arc(canvas.width * i / 6 + 45, canvas.height * i / 6 + 45, 30, 0, 2 * Math.PI);
+   context.fillStyle = "rgb(" + Math.floor(255-51*i) + "," + Math.floor(255-51*i) + "," + Math.floor(255-51*i) + ")";
+   context.arc(canvas.width * i / 6 + 45, canvas.height * i / 6 + 45, canvas.width / 20, 0, 2 * Math.PI);
    context.fill();
    context.stroke();
  }

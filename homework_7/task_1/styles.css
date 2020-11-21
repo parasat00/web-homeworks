@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #bf80ff;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+}
+.column {
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .date {
+  background: white;
+  text-align: left;
+  padding: 5px 10px;
+}
+section .date input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 200px;
+}
+
+section .smalltext {
+  border-top: 1px solid black;
+}
+.d-m-y div {
+  margin: 10px;
+}
+.hide {
+  display: none;
+}
+span {
+  font-size: 70px;
+}
