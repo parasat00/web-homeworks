@@ -29,33 +29,31 @@ textArea.addEventListener('keyup', function() {
 //  console.log(textArea.value);
  if(textArea.value === "") {
   paragraphCount.innerHTML = 0;
+  topKeywords.innerHTML = "";
  }
  else{
   paragraphCount.innerHTML = textArea.value.replace(/\n$/gm, '').split(/\n/).length;
  }
  
   if(a !== null) {
-     if (words) {
-
     for (var i = 0; i < a.length; i++) {
     a[i].toLowerCase();
     }
     var ab = [];
-    var stopWords = ["a", "able", "about", "also", "although", "am", "an", "and", "any", "anybody", "are", "arent", "as", "ask", "at", "be",  "been", "but", "by", "did", "didn't", "do", "does", "doesn't", "doing", "done", "don't","due","each", "else","etc", "every", "for","get", "go", "goes", "gone", "got", "gotten", "had", "has", "hasn't", "have", "haven't", "having","hence", "here", "how", "if", "in",  "is", "isn't", "it", "itd", "it'll", "its", "itself", "i've", "kg", "km", "oh", "was", "wasn't", "we", "we'll", "were", "weren't", "we've", "what", "whatever", "what'll", "whats", "when", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "wheres", "whereupon", "wherever", "whether", "which", "while", "whim", "whither", "who", "whod", "whoever", "whole", "who'll", "whom", "whomever", "whos", "whose", "why", "with", "within", "without", "won't", "would", "wouldn't", "www", "you", "youd", "you'll", "your", "youre", "yours", "yourself", "yourselves", "you've"];
-    for (var i = 0; i < words.length; i++) {
-      // filtering out stop words and numbers
-      if (stopWords.indexOf(a[i]) === -1 && isNaN(words[i])) {
-        a.push(words[i].toLowerCase());
+    var stopWords = ["a", "able", "about", "also", "am", "an", "and", "any", "anybody", "are", "arent", "as", "ask", "at", "be",  "been", "but", "by", "did", "didn't", "do", "does", "doesn't", "doing", "done", "don't","due","each", "else","etc", "every", "for","get", "go", "goes", "gone", "got", "gotten", "had", "has", "hasn't", "have", "haven't", "having","hence", "here", "how", "if", "in",  "is", "isn't", "it", "itd", "it'll", "its", "i've", "kg", "km", "oh", "the", "to", "was", "wasn't", "we", "we'll", "were", "weren't", "we've", "what", "whatever", "what'll", "whats", "when", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "wheres", "whereupon", "wherever", "whether", "which", "while", "whim", "whither", "who", "whod", "whoever", "whole", "who'll", "whom", "whomever", "whos", "whose", "why", "would", "wouldn't", "www", "you",];
+    for (var i = 0; i < a.length; i++) {
+      if (stopWords.indexOf(a[i]) === -1 && isNaN(a[i])) {
+        ab.push(a[i].toLowerCase());
       }
     }
 
     var keywords = {};
   
-  for (var i = 0; i < a.length; i++) {
-    if (a[i] in keywords) {
-      keywords[a[i]] += 1;
+  for (var i = 0; i < ab.length; i++) {
+    if (ab[i] in keywords) {
+      keywords[ab[i]] += 1;
     } else {
-      keywords[a[i]] = 1;
+      keywords[ab[i]] = 1;
     }
   }
   var sortedKeywords = [];
