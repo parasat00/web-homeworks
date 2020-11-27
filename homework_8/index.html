@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles.css">
+ <script src="./script.js" defer></script>
+ <title>Quiz_hw</title>
+</head>
+<body>
+
+  <div class="black_back">
+ <div class="enter-names">
+  <h1>Enter your first and second names below</h1>
+  <h4 class="warning">*your names should be consisted only from english letters</h4>
+  <input type="text" name="firstName" id="firstName" placeholder="Enter your first name here...">
+  <br>
+  <input type="text" name="secondName" id="secondName" placeholder="Enter your second name here...">
+  <input type="button" value="Start the Quiz" onclick="check()">
+ </div>
+ </div>
+ <div class="black_back hide" id = "score">
+  <div class="enter-names">
+   <h2 id="underScore"></h2>
+   <input type="button" value="Hide" id=hide_but class="red" onclick="hide()">
+  </div>
+ </div>
+
+<div class="centered">
+ <div class = "quiz">
+  <h1>Web Development Quiz</h1>
+  <input type="button" value="Pass Again?" class="red hide" id="again" onclick="allAgain()">
+  
+  <input type="button" value="Submit!" onclick="submit()">
+ </div>
+ </div>
+</body>
+</html>

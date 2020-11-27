@@ -1,0 +1,65 @@
+{
+ "questions": [
+ {
+  "question": "What does HTML stand for?",
+  "options": ["Hyperlinks and Text Markup Language", "Hyper Text Markup Language", "Home Tool Markup Language"],
+  "answer": "Hyper Text Markup Language",
+  "usersOp": ""
+ },
+ {
+  "question": "Choose the correct HTML tag for the largest heading",
+  "options": ["<heading>", "<h6>", "<head>", "<h1>"],
+  "answer": "<h1>",
+  "usersOp": ""
+ },
+ {
+  "question": "What is the correct HTML tag for inserting a line break?",
+  "options": ["<br>", "<lb>", "<break>"],
+  "answer": "<br>",
+  "usersOp": ""
+ },
+ {
+  "question": "Which of these tags are all <table> tags?",
+  "options": ["<table><head><tfoot>", "<table><tr><td>", "<thead><body><tr>", "<table><tr><tt>"],
+  "answer": "<table><tr><td>",
+  "usersOp": ""
+ },
+ {
+  "question": "Which is the correct CSS syntax?",
+  "options": ["body {color: black;}", "{body:color=black;}", "body:color=black;", "{body;color:black;}"],
+  "answer": "body {color: black;}",
+  "usersOp": ""
+ },
+ {
+  "question": "What does CSS stand for?",
+  "options": ["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
+  "answer": "Cascading Style Sheets",
+  "usersOp": ""
+ },
+ {
+  "question": "Which sign does jQuery use as a shortcut for jQuery?",
+  "options": ["the ? sign", "the # sign", "the $ sign"],
+  "answer": "the $ sign",
+  "usersOp": ""
+ },
+ {
+  "question": "With jQuery, look at the following selector: $('div'). What does it select?",
+  "options": ["All div elements", "The first div element"],
+  "answer": "All div elements",
+  "usersOp": ""
+ },
+ {
+  "question": "Which jQuery method is used to hide selected elements?",
+  "options": ["hidden()", "visible(false)", "hide()", "display(none)"],
+  "answer": "hide()",
+  "usersOp": ""
+ },
+ {
+  "question": "What is a CMS in web design?",
+  "options": ["Content Management System", "Creative Management System", "Content Mixing System", "Creatives Managerial System"],
+  "answer": "Content Management System",
+  "usersOp": ""
+ }
+
+]
+}
